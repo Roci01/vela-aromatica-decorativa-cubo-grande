@@ -116,7 +116,7 @@
       <label>Tu nombre:</label>
       <input type="text" id="nombre" />
 
-      <div id="precio">Precio: 1,500 CUC</div>
+      <div id="precio">Precio: 1,500 CUP</div>
 
       <button type="button" class="submit-button" onclick="enviarWhatsapp()">Enviar por WhatsApp</button>
     </form>
@@ -142,8 +142,8 @@
     function actualizarPrecio() {
       const aroma = aromaSelect.value;
       precioDiv.textContent = aroma === "Sin aroma"
-        ? "Precio: 1,500 CUC"
-        : "Precio: 2,100 CUC";
+        ? "Precio: 1,500 CUP"
+        : "Precio: 2,100 CUP";
     }
 
     function enviarWhatsapp() {
@@ -173,9 +173,9 @@
         + "🎨 Color: " + color + "\n"
         + "🔢 Cantidad: " + cantidad + "\n"
         + "👤 Nombre: " + nombre + "\n"
-        + "💰 Precio por unidad: " + precioFinal + " CUC";
+        + "💰 Precio por unidad: " + precioFinal + " CUP";
 
-      var url = "https://wa.me/5355300075?text=" + encodeURIComponent(mensaje);
+      var url = "https://wa.me/5353810462?text=" + encodeURIComponent(mensaje);
       window.open(url, "_blank");
     }
 
